@@ -32,7 +32,7 @@ body{
 }
 
 .header a:hover {
-    background-color: #ddd;
+    background-color: #1ec450;
     color: black;
 }
 
@@ -45,20 +45,78 @@ body{
     float: right;
 }
 
-.header-center{
+.header-center h1{
     text-align: center;
     padding-top: 4%;
+    margin-top: 5%;
+}
+
+.header-center h1{
     font-size: 25px;
 }
 
-@media screen and (max-width: 500px) {
+.principal{
+    padding-top: 4%;
+}
+
+.principal h2{
+    text-align: center;
+}
+
+.container-Rgp1{
+    width: 200px;
+    height: 290px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(-360deg);
+    }
+}
+
+.container-Rgp1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*72deg)) translateZ(350px);
+}
+
+.container-Rgp1 span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+/* Media query para mi proyecto */
+@media screen and (max-width: 600px) {
     .header a {
       float: none;
       display: block;
       text-align: left;
     }
+
     .header-right {
       float: none;
     }
-}
 
+    #home{
+        display: none;
+    }
+    
+}
