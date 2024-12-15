@@ -4,6 +4,8 @@ body{
     line-height: 1.6;
 }
 
+/* *****************Section header********************* */
+
 .header{
     overflow: hidden;
     background: linear-gradient(25deg, #800020, #F7E7CE);
@@ -55,6 +57,8 @@ body{
     font-size: 25px;
 }
 
+/* *****************Section principal********************* */
+
 .principal{
     padding-top: 4%;
 }
@@ -68,7 +72,7 @@ body{
     height: 290px;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotate 15s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate{
@@ -98,9 +102,29 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 100px;
+    border-radius: 70px;
     object-fit: cover;
     transition: 2s;
+}
+
+/* *****************Section principal-cel********************* */
+
+.container-Rgp1-cel{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.container-Rgp1-cel img{
+    height: 200px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 13px;
+    grid-row-gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 /* Media query para mi proyecto */
@@ -119,4 +143,10 @@ body{
         display: none;
     }
     
+}
+
+@media screen and (min-width: 600px) {
+    #home-cel {
+        display: none;
+    }
 }
