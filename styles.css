@@ -135,6 +135,7 @@ body{
 }
 
 .container-productos{
+    display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -143,7 +144,7 @@ body{
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 7px;
+    grid-column-gap: 25px;
     grid-row-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
