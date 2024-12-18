@@ -131,6 +131,7 @@ body{
 
 .productos{
     margin-top: 150px;
+    padding-bottom: 12%;
     background: linear-gradient(45deg, #F7E7CE, #ADD8E6);
 }
 
@@ -220,11 +221,6 @@ body{
     transform: scale(0.98);
   }
   
-  .card:active::after {
-    content: "Added !";
-    height: 3.125em;
-  }
-  
   .image {
     background: rgb(241, 241, 241);
     width: 100%;
@@ -237,6 +233,94 @@ body{
     max-width: 90%;
     max-height: 87%;
     object-fit: cover;
+}
+
+/* *****************Section contacto********************* */
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: royalblue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+.contacto .seccion-titulo{
+    color: aliceblue;
+}
+
+.contacto button{
+    color: aliceblue;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em, 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.contacto button i{
+    color: antiquewhite;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    color: black;
+}
+
+/* *****************Section about me********************* */
+
+.sobre-mi{
+    height: 400px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+/* *****************Section compras********************* */
+
+.compra{
+    padding-top: 3%;
+}
+
+.compra h2{
+    text-align: center;
 }
 
 /* Media query para mi proyecto */

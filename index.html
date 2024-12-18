@@ -13,6 +13,7 @@
     <title>RGP Perfume Premium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="compra.html">
     <link rel="icon" href="Resources/RGP Perfume Premium logo.png">
   </head>
   <body>
@@ -21,10 +22,10 @@
       <div class="header">
         <a href="#home" class="logo"><img src="Resources/RGP Perfume Premium logo.png" alt="Logo"></a>
         <div class="header-right">
-          <a class="active" href="#home">Home</a>
+          <a class="active" href="/index.html">Home</a>
           <a href="#perfumes">Perfumes</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <a href="#contacto">Contact</a>
+          <a href="#sobre-mi">About</a>
         </div>
         <div class="header-center"> <h1>Perfumeria premium</h1></div>
       </div>
@@ -70,13 +71,15 @@
         <h2>Descubre Tu Fragancia Perfecta</h2><br>
         <div class="parent">
           <div class="div1">
-            <div class="card">
-              <div class="image">
-                <img src="Resources/perfume1.jpg" alt="Img-perfume">
+            <a href="compra.html">
+              <div class="card">
+                <div class="image">
+                  <img src="Resources/perfume1.jpg" alt="Img-perfume">
+                </div>
+                  <span class="title">Cool Chair</span>
+                  <span class="price">$100</span>
               </div>
-                <span class="title">Cool Chair</span>
-                <span class="price">$100</span>
-            </div>
+            </a>
           </div>
 
           <div class="div2">
@@ -154,6 +157,85 @@
         </div>
       </div>
     </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class=" container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              Hablamos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar un proyecto de desarrollo
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="Mail to: randallgp19-12@hotmail.com">
+                <button type="button">Contacto</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a tu desarrollador</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia dignissimos temporibus omnis magni, ab nesciunt, nostrum nobis deserunt voluptate illo laudantium porro iusto, eius amet! Tenetur blanditiis obcaecati laboriosam cum.</p>
+      </div>
+    </section>
+
+    <footer style="background-color: #eee6d3;">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h5 class="mb-3 text-dark">footer content</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+              voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-3 text-dark">links</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                <a href="#!" style="color: #4f4f4f;">FAQ</a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" style="color: #4f4f4f;">Classes</a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" style="color: #4f4f4f;">Pricing</a>
+              </li>
+              <li>
+                <a href="#!" style="color: #4f4f4f;">Safety</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-1 text-dark">opening hours</h5>
+            <table class="table" style="border-color: #666;">
+              <tbody>
+                <tr>
+                  <td>Mon - Fri:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Sat - Sun:</td>
+                  <td>8am - 1am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
