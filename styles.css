@@ -4,6 +4,12 @@ body{
     line-height: 1.6;
 }
 
+h1{
+    text-align: center;
+    margin-top: -4%;
+    background: linear-gradient(45deg, #F7E7CE, #ADD8E6);
+}
+
 /* *****************Section header********************* */
 
 .header{
@@ -45,16 +51,6 @@ body{
 
 .header-right {
     float: right;
-}
-
-.header-center h1{
-    text-align: center;
-    padding-top: 4%;
-    margin-top: 5%;
-}
-
-.header-center h1{
-    font-size: 25px;
 }
 
 /* *****************Section principal********************* */
@@ -317,10 +313,17 @@ body{
 
 .compra{
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .compra h2{
     text-align: center;
+}
+
+/* *****************Section footer********************* */
+
+.footer-rgp{
+    background: linear-gradient(45deg, #F7E7CE, #ADD8E6);
 }
 
 /* Media query para mi proyecto */
@@ -343,7 +346,7 @@ body{
     .div9 { grid-area: auto; }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .header a {
       float: none;
       display: block;
@@ -352,6 +355,11 @@ body{
 
     .header-right {
       float: none;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: -1%;
     }
 
     #home{
@@ -393,7 +401,7 @@ body{
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     #home-cel {
         display: none;
     }
